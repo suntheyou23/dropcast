@@ -1,0 +1,51 @@
+{
+  "name": "dropcast",
+  "version": "1.0.0",
+  "description": "Automated weekly bookmark digest mailer using Raindrop.io API and AWS SES",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/",
+    "start": "node src/index.js",
+    "cdk": "cdk",
+    "cdk:diff": "cdk diff",
+    "cdk:deploy": "cdk deploy",
+    "cdk:destroy": "cdk destroy",
+    "cdk:synth": "cdk synth",
+    "cdk:bootstrap": "cdk bootstrap"
+  },
+  "keywords": [
+    "raindrop",
+    "bookmarks",
+    "aws",
+    "lambda",
+    "ses",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.0.0",
+    "aws-cdk-lib": "^2.215.0",
+    "axios": "^1.6.0",
+    "constructs": "^10.4.2",
+    "dotenv": "^17.2.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^24.5.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^8.0.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

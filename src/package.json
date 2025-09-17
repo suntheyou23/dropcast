@@ -1,0 +1,14 @@
+{
+  "name": "dropcast-bookmark-mailer-lambda",
+  "version": "1.0.0",
+  "description": "Lambda function for DropCast bookmark mailer",
+  "type": "module",
+  "main": "index.js",
+  "dependencies": {
+    "@aws-sdk/client-ssm": "^3.890.0",
+    "axios": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
